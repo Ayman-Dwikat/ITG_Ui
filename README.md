@@ -1,2 +1,2 @@
-# ITG_Ui
-Ui task
+# Demo
+[Preview the design here](https://ayman-dwikat.github.io/Ui_ITG/)
