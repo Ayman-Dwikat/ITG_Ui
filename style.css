@@ -1,0 +1,190 @@
+:root {
+  --main-color: #3399ff;
+  --elements-color: #ffb100;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffcc66;
+  margin: 0;
+}
+
+.box {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 8%;
+  width: 600px;
+  height: 520px;
+}
+
+.clock {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  width: 340px;
+  height: 340px;
+  background: white;
+  border: 7px solid black;
+  outline: 40px solid var(--main-color);
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px var(--main-color);
+}
+
+.blue-border {
+  height: 325px;
+  border: 8px solid #24478f;
+  border-radius: 50%;
+}
+
+.bell {
+  position: absolute;
+  width: 36%;
+  height: 48px;
+  background: var(--main-color);
+  border-radius: 45px 45px 0 0;
+  z-index: 1;
+}
+
+.bell.left {
+  top: -59px;
+  left: -39px;
+  transform: rotate(-37deg);
+  z-index: 1;
+}
+
+.bell.right {
+  top: -57px;
+  right: -44px;
+  transform: rotate(37deg);
+  z-index: 1;
+}
+
+.hammer {
+  width: 44px;
+  height: 80px;
+  position: absolute;
+  background: #ffffff;
+  border-radius: 40px 40px 0 0;
+  z-index: -1;
+}
+
+.hammer.left {
+  top: -10%;
+  left: 10%;
+  transform: rotate(140deg);
+}
+
+.hammer.right {
+  top: -10%;
+  left: 80%;
+  transform: rotate(-140deg);
+}
+
+.foot {
+  position: absolute;
+  width: 24px;
+  height: 80px;
+  background: #ffffff;
+  border-radius: 50% 50% 0 0;
+  box-shadow: 0px 25px 10px rgba(0, 0, 0, 0.2), 0px 25px 10px rgba(0, 0, 0, 0.2);
+}
+
+.foot.left {
+  bottom: -90px;
+  left: 35px;
+  transform: rotate(-140deg);
+  z-index: -1;
+}
+
+.foot.right {
+  bottom: -90px;
+  right: 35px;
+  transform: rotate(140deg);
+  z-index: -1;
+}
+
+.circle {
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  background: var(--elements-color);
+  border-radius: 50%;
+  box-shadow: 1px 12px 10px rgba(0, 0, 0, 0.5);
+}
+
+.circle1 {
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.circle2 {
+  top: 50%;
+  left: 17px;
+  transform: translateY(-50%);
+}
+
+.circle3 {
+  top: 50%;
+  right: 17px;
+  transform: translateY(-50%);
+}
+
+.circle4 {
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hand {
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 3px);
+  background: var(--elements-color);
+  transform-origin: bottom;
+  box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.3),
+      0px 20px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hour-hand {
+  width: 19px;
+  height: 95px;
+  left: 52%;
+  top: 24%;
+  transform: rotate(110deg);
+  border-radius: 40% 40% 0 0;
+}
+
+.minute-hand {
+  width: 19px;
+  height: 110px;
+  left: 43%;
+  top: 14%;
+  transform: rotate(325deg);
+  border-radius: 40% 40% 0 0;
+}
+
+.second-hand {
+  width: 4px;
+  height: 65px;
+  left: 44%;
+  top: 36%;
+  transform: rotate(228deg);
+  border-radius: 30px 30px 0 0;
+}
+
+.hands-circle {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background: white;
+  border: 5px solid var(--elements-color);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
